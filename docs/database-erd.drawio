@@ -1,0 +1,448 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Student Choice - Database ERD" id="student-choice-erd">
+    <mxGraphModel dx="1414" dy="1877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="regions" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;align=center;verticalAlign=top;" value="regions" vertex="1">
+          <mxGeometry height="66" width="220" x="2820" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="regions_id" parent="regions" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="regions_name" parent="regions" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="cities" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;align=center;verticalAlign=top;" value="cities" vertex="1">
+          <mxGeometry height="86" width="220" x="2820" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="cities_id" parent="cities" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cities_region_id" parent="cities" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#82b366;" value="FK  region_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="cities_name" parent="cities" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="degree_levels" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;align=center;verticalAlign=top;" value="degree_levels" vertex="1">
+          <mxGeometry height="66" width="220" x="2820" y="-170" as="geometry" />
+        </mxCell>
+        <mxCell id="degree_levels_id" parent="degree_levels" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="degree_levels_name" parent="degree_levels" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="fields_of_study" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;align=center;verticalAlign=top;" value="fields_of_study" vertex="1">
+          <mxGeometry height="66" width="220" x="2820" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="fields_of_study_id" parent="fields_of_study" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="fields_of_study_name" parent="fields_of_study" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="tawjihi_branches" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;align=center;verticalAlign=top;" value="tawjihi_branches" vertex="1">
+          <mxGeometry height="66" width="220" x="2220" y="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="tawjihi_branches_id" parent="tawjihi_branches" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tawjihi_branches_name" parent="tawjihi_branches" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="institutions" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;align=center;verticalAlign=top;" value="institutions" vertex="1">
+          <mxGeometry height="106" width="220" x="200" y="-533" as="geometry" />
+        </mxCell>
+        <mxCell id="institutions_id" parent="institutions" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="institutions_name" parent="institutions" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="institutions_type" parent="institutions" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="institution_type" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="institutions_website" parent="institutions" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="official_website" vertex="1">
+          <mxGeometry height="20" width="220" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="campuses" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;align=center;verticalAlign=top;" value="campuses" vertex="1">
+          <mxGeometry height="106" width="220" x="810" y="-503" as="geometry" />
+        </mxCell>
+        <mxCell id="campuses_id" parent="campuses" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="campuses_institution_id" parent="campuses" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d79b00;" value="FK  institution_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="campuses_city_id" parent="campuses" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#82b366;" value="FK  city_id" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="campuses_name" parent="campuses" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name (nullable)" vertex="1">
+          <mxGeometry height="20" width="220" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="faculties" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;align=center;verticalAlign=top;" value="faculties" vertex="1">
+          <mxGeometry height="86" width="220" x="810" y="-630" as="geometry" />
+        </mxCell>
+        <mxCell id="faculties_id" parent="faculties" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="faculties_institution_id" parent="faculties" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d79b00;" value="FK  institution_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="faculties_name" parent="faculties" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="users" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;align=center;verticalAlign=top;" value="users" vertex="1">
+          <mxGeometry height="186" width="220" x="3170" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="users_id" parent="users" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="users_name" parent="users" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="users_email" parent="users" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="email (unique)" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="users_password" parent="users" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="password (hashed)" vertex="1">
+          <mxGeometry height="20" width="220" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="users_role" parent="users" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="role (student|admin)" vertex="1">
+          <mxGeometry height="20" width="220" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="users_is_banned" parent="users" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="is_banned" vertex="1">
+          <mxGeometry height="20" width="220" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="users_banned_reason" parent="users" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="banned_reason" vertex="1">
+          <mxGeometry height="20" width="220" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="users_banned_at" parent="users" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="banned_at" vertex="1">
+          <mxGeometry height="20" width="220" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;align=center;verticalAlign=top;" value="student_profiles" vertex="1">
+          <mxGeometry height="206" width="220" x="2800" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_id" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_user_id" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#6c8ebf;" value="FK  user_id (unique)" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_gpa" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="gpa" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_branch" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d6b656;" value="FK  tawjihi_branch_id" vertex="1">
+          <mxGeometry height="20" width="220" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_region" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#82b366;" value="FK  preferred_region_id" vertex="1">
+          <mxGeometry height="20" width="220" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_city" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#82b366;" value="FK  preferred_city_id" vertex="1">
+          <mxGeometry height="20" width="220" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_budget" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="budget_max" vertex="1">
+          <mxGeometry height="20" width="220" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_photo" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="photo_path" vertex="1">
+          <mxGeometry height="20" width="220" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="student_profiles_description" parent="student_profiles" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="description" vertex="1">
+          <mxGeometry height="20" width="220" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="student_preferred_fields" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;align=center;verticalAlign=top;" value="student_preferred_fields" vertex="1">
+          <mxGeometry height="86" width="220" x="2340" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="spf_id" parent="student_preferred_fields" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="spf_profile_id" parent="student_preferred_fields" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#6c8ebf;" value="FK  student_profile_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="spf_field_id" parent="student_preferred_fields" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d79b00;" value="FK  field_of_study_id" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="majors" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=top;" value="majors" vertex="1">
+          <mxGeometry height="266" width="220" x="1900" y="-660" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_id" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_institution_id" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d79b00;" value="FK  institution_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_faculty_id" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d79b00;" value="FK  faculty_id" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_degree_level_id" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#82b366;" value="FK  degree_level_id" vertex="1">
+          <mxGeometry height="20" width="220" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_field_of_study_id" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#82b366;" value="FK  field_of_study_id" vertex="1">
+          <mxGeometry height="20" width="220" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_name" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_price" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="credit_hour_price" vertex="1">
+          <mxGeometry height="20" width="220" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_hours" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="credit_hours" vertex="1">
+          <mxGeometry height="20" width="220" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_duration" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="study_duration_text" vertex="1">
+          <mxGeometry height="20" width="220" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_avg" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="admission_average" vertex="1">
+          <mxGeometry height="20" width="220" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_min_gpa" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="min_gpa_to_apply" vertex="1">
+          <mxGeometry height="20" width="220" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="majors_link" parent="majors" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="admission_link" vertex="1">
+          <mxGeometry height="20" width="220" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="major_campus" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;align=center;verticalAlign=top;" value="major_campus" vertex="1">
+          <mxGeometry height="86" width="220" x="1200" y="-333" as="geometry" />
+        </mxCell>
+        <mxCell id="mc_id" parent="major_campus" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mc_major_id" parent="major_campus" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d6b656;" value="FK  major_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="mc_campus_id" parent="major_campus" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d79b00;" value="FK  campus_id" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="major_tawjihi_branch" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;align=center;verticalAlign=top;" value="major_tawjihi_branch" vertex="1">
+          <mxGeometry height="86" width="220" x="2220" y="-274" as="geometry" />
+        </mxCell>
+        <mxCell id="mtb_id" parent="major_tawjihi_branch" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mtb_major_id" parent="major_tawjihi_branch" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d6b656;" value="FK  major_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="mtb_branch_id" parent="major_tawjihi_branch" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d6b656;" value="FK  tawjihi_branch_id" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="scholarships" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=top;" value="scholarships" vertex="1">
+          <mxGeometry height="126" width="220" x="1210" y="-1090" as="geometry" />
+        </mxCell>
+        <mxCell id="scholarships_id" parent="scholarships" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scholarships_name" parent="scholarships" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="scholarships_description" parent="scholarships" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="description" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="scholarships_discount" parent="scholarships" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="discount_percentage" vertex="1">
+          <mxGeometry height="20" width="220" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="scholarships_notes" parent="scholarships" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="eligibility_notes" vertex="1">
+          <mxGeometry height="20" width="220" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="student_scholarships" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;align=center;verticalAlign=top;" value="student_scholarships" vertex="1">
+          <mxGeometry height="86" width="220" x="3170" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_id" parent="student_scholarships" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_profile_id" parent="student_scholarships" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#6c8ebf;" value="FK  student_profile_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_scholarship_id" parent="student_scholarships" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#d6b656;" value="FK  scholarship_id" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="ss_note" parent="1" style="text;html=1;align=center;fontSize=10;fontStyle=2;fontColor=#9673a6;" value="A scholarship belongs to the student, not to any major —&#10;it discounts whatever major that student studies." vertex="1">
+          <mxGeometry height="40" width="260" x="3140" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="support_tickets" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;align=center;verticalAlign=top;" value="support_tickets" vertex="1">
+          <mxGeometry height="146" width="220" x="3510" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="st_id" parent="support_tickets" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontStyle=1;fontSize=11;" value="PK  id" vertex="1">
+          <mxGeometry height="20" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="st_user_id" parent="support_tickets" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;fontColor=#6c8ebf;" value="FK  user_id" vertex="1">
+          <mxGeometry height="20" width="220" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="st_subject" parent="support_tickets" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="subject" vertex="1">
+          <mxGeometry height="20" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="st_message" parent="support_tickets" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="message" vertex="1">
+          <mxGeometry height="20" width="220" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="st_reply" parent="support_tickets" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="admin_reply" vertex="1">
+          <mxGeometry height="20" width="220" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="st_status" parent="support_tickets" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;fontSize=11;" value="status (open|answered|closed)" vertex="1">
+          <mxGeometry height="20" width="220" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="cities" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="regions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="campuses" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="institutions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="-443" />
+              <mxPoint x="630" y="-480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="campuses" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="cities">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="-447" />
+              <mxPoint x="930" y="-830" />
+              <mxPoint x="2080" y="-830" />
+              <mxPoint x="2080" y="-820" />
+              <mxPoint x="3130" y="-820" />
+              <mxPoint x="3130" y="93.14" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="faculties_institution_id" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;elbow=vertical;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="institutions_name">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="-574" />
+              <mxPoint x="630" y="-482" />
+            </Array>
+            <mxPoint x="1280" y="97" as="sourcePoint" />
+            <mxPoint x="1240" y="279.03" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="student_profiles_user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERone;startArrow=ERone;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="users_id">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3020" y="740" />
+              <mxPoint x="3170" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="student_profiles" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="tawjihi_branches_id">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2140" y="723" />
+              <mxPoint x="2140" y="-114" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="student_profiles" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="regions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2710" y="793.06" />
+              <mxPoint x="2710" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="student_profiles" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="cities">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2690.03" y="830" />
+              <mxPoint x="2690.03" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nGz1nO7s8itbR7ToKrLm-7" connectable="0" parent="e8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Text" vertex="1">
+          <mxGeometry relative="1" x="0.2329" y="-6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="student_profiles_id">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2610" y="210" />
+              <mxPoint x="2610" y="720" />
+              <mxPoint x="2800" y="720" />
+            </Array>
+            <mxPoint x="2560" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="spf_field_id" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="fields_of_study">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2640" y="226" />
+              <mxPoint x="2640" y="-17" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="majors" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="institutions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2010" y="-143" />
+              <mxPoint x="630" y="-143" />
+              <mxPoint x="630" y="-477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="majors_faculty_id" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="faculties">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1225" y="-584" />
+              <mxPoint x="1225" y="-570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="majors" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="degree_levels">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2760" y="-143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="majors" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="fields_of_study">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="major_campus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="majors">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="major_campus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="campuses_id" value="am&amp;nbsp;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1120" y="-320" />
+              <mxPoint x="1120" y="-467" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="major_tawjihi_branch" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="majors">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2190.03" y="-220" />
+              <mxPoint x="2190.03" y="-516.97" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="major_tawjihi_branch" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="tawjihi_branches">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2640" y="-220" />
+              <mxPoint x="2640" y="-110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="student_scholarships" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="student_profiles">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3080" y="1000" />
+              <mxPoint x="3080" y="896" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="student_scholarships" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="scholarships">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3500" y="1000" />
+              <mxPoint x="3500" y="-1027" />
+              <mxPoint x="1430" y="-1027" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="support_tickets" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERmandOne;startArrow=ERmany;fontSize=9;" target="users">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
